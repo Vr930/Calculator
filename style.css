@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(52, 49, 53);
+}
+.name {
+    margin-top: 90px;
+    color: cornsilk;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid {
+    color: aliceblue;
+    font-size: 20px;
+}
