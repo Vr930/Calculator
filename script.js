@@ -1,23 +1,18 @@
-const insert = (num) => {
-    document.forms[0].elements.textview.value += num;
+console.log (document.forms.calculator.elements.input.value)
+const input = (num) => {
+    document.forms.calculator.elements.input.value += num;
 };
 
 const clean = () => {
-   return document.forms[0].elements.textview.value = " ";
-};
-
-const back = () => {
-    let str = document.forms[0].elements.textview.value;
-    let exp = str.toString();
-    let result = ' ';
-    for (let x = 0; x < exp.length - 1; x++) {
-        result += exp[x];
-    }
-   
-    document.forms[0].elements.textview.value = result;
+    return document.forms.calculator.elements.input.value = ' ';
 }
 
 const equal = () => {
-    let str = document.forms[0].elements.textview.value;
-    document.forms[0].elements.textview.value = eval(str);
+    let exp = document.forms.calculator.elements.input.value;
+    return document.forms.calculator.elements.input.value = eval(exp);
+}
+
+const del = () => {
+    let string = document.forms.calculator.elements.input.value;
+    return document.forms.calculator.elements.input.value = string.slice(0, string.length-1);
 }

@@ -4,43 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1 class="name">Мой калькулятор</h1>
-    <div class="grid">       
-        <div class="item input">
-            <form action="#" name="form"> 
-                <input type="text" name="textview" readonly>
-            </form>
-        </div>
-        <div class="item clean" onclick="clean()">C</div>
-        <div class="item back" onclick="back()">&larr;</div>
-        <div class="item" onclick="insert('+')">+</div>
-        <div class="item" onclick="insert('-')">-</div>
-        <div class="item" onclick="insert('*')">&times;</div>
-        <div class="item" onclick="insert('/')">&divide;</div>
-        <div class="item" onclick="insert(7)">7</div>
-        <div class="item" onclick="insert(8)">8</div>
-        <div class="item" onclick="insert(9)">9</div>
-        <div class="item" onclick="insert('(')">(</div>
-        <div class="item" onclick="insert(4)">4</div>
-        <div class="item" onclick="insert(5)">5</div>
-        <div class="item" onclick="insert(6)">6</div>
-        <div class="item" onclick="insert(')')">)</div>
-        <div class="item" onclick="insert(1)">1</div>
-        <div class="item" onclick="insert(2)">2</div>
-        <div class="item" onclick="insert(3)">3</div>
-        <div class="item equal" onclick="equal()">=</div>
-        <div class="item zero" onclick="insert(0)">0</div>
-        <div class="item" onclick="insert('.')">.</div>
+    <header>
+        <span class="header">Calculator</span>
+        <span>
+            <img class="header_img" src="img/wondicon-ui-free-calculator_111257.png" alt="no img">
+        </span> 
+       
+    </header>
+    <h1>Простой калькулятор</h1>
+    <div class="wrapper"> 
+        <div class="empty"></div>
+            <div class="conteiner">
+                <div class="grid">
+                    <div class="item info">
+                        <form action="#" name="calculator">
+                            <input type="text" name="input" value="" readonly>
+                        </form>
+                    </div>
+                    <div class="item" onclick="input(7)">7</div>
+                    <div class="item" onclick="input(8)">8</div>
+                    <div class="item" onclick="input(9)">9</div>
+                    <div class="item del" onclick="del()">&larr;</div>
+                    <div class="item" onclick="input(4)">4</div>
+                    <div class="item" onclick="input(5)">5</div>
+                    <div class="item" onclick="input(6)">6</div>
+                    <div class="item multiply" onclick="input('*')">&#215</div>
+                    <div class="item divide" onclick="input('/')">&#247</div>
+                    <div class="item" onclick="input(1)">1</div>
+                    <div class="item" onclick="input(2)">2</div>
+                    <div class="item" onclick="input(3)">3</div>
+                    <div class="item bracket" onclick="input('(')">(</div>
+                    <div class="item bracket" onclick="input(')')">)</div>
+                    <div class="item minus" onclick="input('-')">-</div>
+                    <div class="item equals" onclick="equal()">=</div>
+                    <div class="item cleen" onclick="clean()">C</div>
+                    <div class="item zero" onclick="input(0)">0</div>
+                    <div class="item point" onclick="input('.')">.</div>
+                    <div class="item plus" onclick="input('+')">+</div>
+                </div>
+            </div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
     </div>
-    
-    <script src="C:\Users\unknwn\Desktop\Education\Пректы\Calculator\script.js">
-        
-        
-    </script>
-     
+
+    <script src="script.js"></script>
 </body>
 </html>
